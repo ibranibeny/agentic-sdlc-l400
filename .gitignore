@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+.venv/
+evidence.json
+review-plan.json
+*.log
+.env
+.env.*
+!.env.example

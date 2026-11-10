@@ -1,0 +1,151 @@
+{
+  "capturedAt": "2026-11-10T00:01:51.463Z",
+  "tool": "Playwright 1.56.1 / Chromium (chrome channel, 156.0.8078.80)",
+  "edited": false,
+  "buildInfo": {
+    "builtAt": "2026-11-10T00:01:37.624Z",
+    "sourceRevision": "local-build-see-file-fingerprints",
+    "fingerprints": {
+      "index.html": "ed22f881f387d242695c436b69b0c577fad1d9089c0e8547b04a4d0ed99123cf",
+      "workshop.html": "36081aad401896216e825e4561176a5bcd6ff7265aff4294fd89e48a9d4a5160",
+      "code.html": "c1a55d3576af60f3733b1020e8dafdce2d3f17ae780cff14601f46ed500500c8",
+      "assets/style.css": "eb112fdcb570fd52b888d1790c1367a5a7edfdd24dc58a2ee2f3346d4282a5dd",
+      "assets/workshop.js": "ebe4be69a698a5a5067839048108e63d3cb150f71da3c1b7ffbfb08a16e1a56f",
+      "assets/lab/policy.mjs": "b260058f9f266623536911812f6a1c5b0b266009e32dd36c11136f5da8c2b6ed",
+      "assets/lab/scenario.mjs": "f3c08da4e47717819353a7fbcbe2d77e42f8c78cfc51c86d397be40a789ff062"
+    }
+  },
+  "captures": [
+    {
+      "file": "story-overview.png",
+      "kind": "screenshot",
+      "description": "Actual story-first overview in the running reference site.",
+      "url": "http://127.0.0.1:4173/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "b61ea79653301ecdcf42b59c32c1e9a3fd3accd5f7bc4f8eca9640e8a0618198"
+    },
+    {
+      "file": "workshop-pass.png",
+      "kind": "screenshot",
+      "description": "Actual high-risk route: synthetic lab structure pass; authority remains closed.",
+      "url": "http://127.0.0.1:4173/workshop.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "b580a4863a4735f102be17067ad0ac4c2d69592d379d4f3a69e586fbd82ee020"
+    },
+    {
+      "file": "workshop-blocked.png",
+      "kind": "screenshot",
+      "description": "Actual validator rejects reports after the expected head SHA changes.",
+      "url": "http://127.0.0.1:4173/workshop.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "c88b88e043f56bdacb884a6404131b63164bcaea0622b07029ab0f9c4681f221"
+    },
+    {
+      "file": "journey-0.png",
+      "kind": "animation-frame",
+      "description": "Actual browser-rendered animation stage 1 of 6.",
+      "url": "http://127.0.0.1:4173/workshop.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "e43322c278455c83c2f740807f27894f0fbe8d179f99cac025a0efdc6fde7935"
+    },
+    {
+      "file": "journey-1.png",
+      "kind": "animation-frame",
+      "description": "Actual browser-rendered animation stage 2 of 6.",
+      "url": "http://127.0.0.1:4173/workshop.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "ae7a7d5f61651ccdf90b300a2680de19978c4483142a4161bb90d199cd438bd7"
+    },
+    {
+      "file": "journey-2.png",
+      "kind": "animation-frame",
+      "description": "Actual browser-rendered animation stage 3 of 6.",
+      "url": "http://127.0.0.1:4173/workshop.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "7f0d8d534b67d30dd6c3d1297037bb026451eaf2c022bf9bc50d1ccd844e03b5"
+    },
+    {
+      "file": "journey-3.png",
+      "kind": "animation-frame",
+      "description": "Actual browser-rendered animation stage 4 of 6.",
+      "url": "http://127.0.0.1:4173/workshop.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "97c2a448143c0643f5508480aebbe9514530a3e1afde91f0f48059f8cf6ba4da"
+    },
+    {
+      "file": "journey-4.png",
+      "kind": "animation-frame",
+      "description": "Actual browser-rendered animation stage 5 of 6.",
+      "url": "http://127.0.0.1:4173/workshop.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "320d4cd479f2fd191d377ac982ebcc37f9b3b57bf71a9b9224f5d83fa2659c6e"
+    },
+    {
+      "file": "journey-5.png",
+      "kind": "animation-frame",
+      "description": "Actual browser-rendered animation stage 6 of 6.",
+      "url": "http://127.0.0.1:4173/workshop.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "b580a4863a4735f102be17067ad0ac4c2d69592d379d4f3a69e586fbd82ee020"
+    },
+    {
+      "file": "real-code.png",
+      "kind": "screenshot",
+      "description": "Actual policy source loaded from lab/policy.mjs at site build time.",
+      "url": "http://127.0.0.1:4173/code.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "sha256": "7eb9b440e608eff69ba0c0ba7eb271a763960c064fb789348e42b3096a2f5dcc"
+    }
+  ],
+  "animation": {
+    "file": "workshop-journey.gif",
+    "sha256": "66add38867c7a8ee49be72fa4fc283770e06bfa6ab2bbcf9ea0946c74048fb4b",
+    "frames": [
+      "journey-0.png",
+      "journey-1.png",
+      "journey-2.png",
+      "journey-3.png",
+      "journey-4.png",
+      "journey-5.png"
+    ],
+    "durationsMs": [
+      1200,
+      1200,
+      1200,
+      1200,
+      1200,
+      2600
+    ],
+    "method": "GIF encoding of six actual unedited browser captures; no generated scene content."
+  }
+}

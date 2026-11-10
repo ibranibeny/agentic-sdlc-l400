@@ -1,0 +1,68 @@
+<section class="workshop-intro">
+  <p class="eyebrow">STORY → OVERVIEW → BUILD → PROVE → DEPLOY</p>
+  <h1>See the actual<br><span>policy engine work.</span></h1>
+  <p class="lead">An animated, executable reference diagram. Its route, reviewer list and verdict come from the same JavaScript modules used by the CLI and tests.</p>
+  <p class="source-note"><strong>Authenticity:</strong> this is our running reference implementation, not a reconstruction or screenshot of Levi Strauss's internal platform. Calculations are real; review records are explicitly synthetic. No AI agents execute here.</p>
+</section>
+<section id="live-workshop" aria-labelledby="live-title">
+  <h2 id="live-title">Follow one change through the system</h2>
+  <div class="lab-controls">
+    <div><label for="scenario">1. Choose a real path set</label><select id="scenario"></select></div>
+    <div><label for="failure">2. Choose a failure injection</label><select id="failure"></select></div>
+    <label class="production-toggle"><input type="checkbox" id="production"> Production-mode structure check</label>
+  </div>
+  <div class="journey-controls" role="group" aria-label="Animation controls">
+    <button id="play" type="button">Play journey</button><button id="step" type="button">Step</button>
+    <button id="run-result" type="button">Run to result</button><button id="reset" type="button">Reset</button>
+  </div>
+  <div id="diagram-capture" class="diagram-capture">
+    <div class="diagram-topline"><span>LIVE REFERENCE IMPLEMENTATION</span><strong id="route-result"></strong></div>
+    <svg id="flow-diagram" viewBox="0 0 1060 420" role="img" aria-labelledby="diagram-title diagram-desc">
+      <title id="diagram-title">Executable evidence-lab flow</title>
+      <desc id="diagram-desc">Changed paths flow through risk routing, synthetic review fixtures, failure injection and structural validation. The final human-authorization boundary always remains closed.</desc>
+      <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#627867"/></marker></defs>
+      <path class="flow-edge" data-edge="0" d="M310 92 H375" marker-end="url(#arrow)"/>
+      <path class="flow-edge" data-edge="1" d="M675 92 H740" marker-end="url(#arrow)"/>
+      <path class="flow-edge" data-edge="2" d="M900 155 V250" marker-end="url(#arrow)"/>
+      <path class="flow-edge" data-edge="3" d="M740 312 H675" marker-end="url(#arrow)"/>
+      <path class="flow-edge" data-edge="4" d="M375 312 H310" marker-end="url(#arrow)"/>
+      <g data-stage="0" class="flow-node"><rect x="10" y="30" width="300" height="125" rx="14"/><text x="30" y="66" class="node-index">01 / INPUT</text><text x="30" y="102" class="node-title">Changed paths</text><text x="30" y="132" class="node-detail">Repository-relative + exact SHA</text></g>
+      <g data-stage="1" class="flow-node"><rect x="375" y="30" width="300" height="125" rx="14"/><text x="395" y="66" class="node-index">02 / ROUTE</text><text x="395" y="102" class="node-title">5 / 8 / 11 reviewers</text><text x="395" y="132" class="node-detail">Actual route() calculation</text></g>
+      <g data-stage="2" class="flow-node"><rect x="740" y="30" width="300" height="125" rx="14"/><text x="760" y="66" class="node-index">03 / LAB REPORTS</text><text x="760" y="102" class="node-title">Synthetic fixtures</text><text x="760" y="132" class="node-detail">No AI agents executed</text></g>
+      <g data-stage="3" class="flow-node"><rect x="740" y="250" width="300" height="125" rx="14"/><text x="760" y="286" class="node-index">04 / MUTATE</text><text x="760" y="322" class="node-title">Failure injection</text><text x="760" y="352" class="node-detail">Stale / missing / contradictory</text></g>
+      <g data-stage="4" class="flow-node"><rect x="375" y="250" width="300" height="125" rx="14"/><text x="395" y="286" class="node-index">05 / VALIDATE</text><text x="395" y="322" class="node-title">Fail-closed structure</text><text x="395" y="352" class="node-detail">Actual validateEvidence()</text></g>
+      <g data-stage="5" class="flow-node authority-node"><rect x="10" y="250" width="300" height="125" rx="14"/><text x="30" y="286" class="node-index">06 / AUTHORITY: CLOSED</text><text x="30" y="322" class="node-title">Human release gate</text><text x="30" y="352" class="node-detail">Not granted by this simulation</text></g>
+      <text x="530" y="208" text-anchor="middle" class="boundary-text">ADVISORY EVIDENCE DOES NOT CONFER AUTHORITY</text>
+    </svg>
+    <div class="stage-status" aria-live="polite"><strong id="stage-title"></strong><p id="stage-detail"></p></div>
+    <div id="verdict" class="lab-verdict" role="status" data-verdict="pending"></div>
+    <div class="capture-disclaimer">Real browser rendering · actual policy code · synthetic evidence · releaseAuthorized: false</div>
+  </div>
+  <div class="reviewer-panel"><h3>Computed reviewer set</h3><div id="reviewer-grid"></div>
+    <p class="source-note">Expected SHA: <code id="sha-result"></code> · <span id="failure-result"></span></p>
+    <ul id="validation-errors" aria-label="Evidence validation errors"></ul>
+  </div>
+  <details class="output-details"><summary>Inspect the actual JSON output</summary><pre><code id="lab-output"></code></pre></details>
+  <noscript><p class="callout">JavaScript is required for the live calculation and animation. The full guide and source-code walkthrough remain readable without it.</p></noscript>
+</section>
+<section>
+  <p class="eyebrow">BUILD THE EXACT EXPERIENCE</p><h2>Code, commands and reproducibility</h2>
+  <div class="cards">
+    <div><span class="card-number">01 / ENGINE</span><h3>Read the real code</h3><p>The page imports the unchanged policy and scenario modules copied by the build. No hardcoded “success” animation substitutes for a verdict.</p><a href="code.html#lab-policy-mjs">Open the policy source</a></div>
+    <div><span class="card-number">02 / UI</span><h3>Connect state to SVG</h3><p>Each animation step highlights an actual flow stage. The selected paths and injected failure drive the reviewer chips and JSON output.</p><a href="code.html#site-workshop-js">Open the animation source</a></div>
+    <div><span class="card-number">03 / PROOF</span><h3>Capture the running page</h3><p>Playwright interacts with the built site, asserts real outputs and saves unedited browser screenshots plus provenance.</p><a href="04-implementation.html">Follow the build walkthrough</a></div>
+  </div>
+</section>
+<section class="terminal"><span>FROM A FRESH CLONE</span><pre><code>npm ci
+npm test
+npm run build
+npx playwright install chromium
+npm run browser:test
+npm run capture
+npm run build
+npm run preview</code></pre><p>Open http://127.0.0.1:4173/workshop.html. Capture runs locally; it does not provision cloud services or invoke paid agents.</p></section>
+<section id="real-screenshots"><p class="eyebrow">ACTUAL CAPTURES, NOT MOCKUPS</p><h2>What the running implementation looks like</h2>
+  <p>These images are generated by the repository's browser-capture command. They show this reference site and its real validator output—not the source company's private system. Rebuild and recapture them yourself.</p>
+  {{SCREENSHOT_GALLERY}}
+</section>
+<p><a class="button" href="07-deployment.html">Next: publish on GitHub Pages</a></p>

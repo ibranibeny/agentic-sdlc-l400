@@ -1,0 +1,27 @@
+{
+  "name": "agentic-sdlc-l400",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Original L400 reference implementation inspired by the Levi Strauss agentic SDLC story",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "agents": "node scripts/generate-agents.mjs",
+    "test": "node --test",
+    "build": "node scripts/build-site.mjs",
+    "check": "node scripts/check.mjs",
+    "lab": "node lab/cli.mjs",
+    "start": "node demo/server.mjs",
+    "verify:deck": "python scripts/verify-deck.py",
+    "preview": "node scripts/serve.mjs",
+    "browser:test": "playwright test",
+    "capture": "node scripts/capture.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "15.0.3",
+    "yaml": "2.9.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1"
+  }
+}

@@ -117,7 +117,7 @@ npm run build
 
 The image sequence is a recording of browser-rendered states, not an AI-generated diagram. PowerPoint shows GIF motion in Slide Show mode; the Pages diagram is fully interactive.
 
-The supplied CI installs Chromium and runs browser behavior checks. It does not regenerate tracked screenshots on every push. Capture deliberately after a relevant visual/code change and commit the new images and provenance together.
+The supplied CI pins Ubuntu 24.04, installs Chromium and runs browser behavior checks. This avoids an unreviewed runner upgrade to an operating system unsupported by the pinned Playwright release. It does not regenerate tracked screenshots on every push. Capture deliberately after a relevant visual/code change and commit the new images and provenance together.
 
 ## Install profiles in another application repository
 

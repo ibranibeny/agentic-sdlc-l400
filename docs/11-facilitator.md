@@ -21,6 +21,18 @@ Allow extra setup time for organizational approvals. No participant should be re
 
 Use the companion PowerPoint to introduce each concept; use the guide for commands and detailed operating decisions. Presenter notes supply source context and discussion prompts. The slides are not a replacement for the labs.
 
+The 36-slide deck follows this teaching path:
+
+| Slides | Facilitation focus |
+|---|---|
+| 1-4 | Introduce the published story, attribution boundary and workshop outcomes |
+| 5-7 | Explain architecture, lifecycle and the recorded six-stage diagram |
+| 8-14 | Examine specialist scopes, contracts, MCP boundaries and evidence |
+| 15-19 | Build from a fresh clone and connect actual source to the UI |
+| 20-26 | Run the labs and compare the captured pass and blocked states |
+| 27-32 | Inspect CI, publish Pages, separate the API runtime and enforce human authority |
+| 33-36 | Discuss cost, rehearse the agenda, assess learners and revisit sources |
+
 Show the real animated diagram after the architecture overview, then inspect its shared policy source before running failure injection. Use the actual captured screenshots for offline delivery. They are labelled reference-implementation captures, not evidence of access to the company's internal platform. In PowerPoint Slide Show, the embedded recorded GIF can animate; the live Pages diagram supports participant interaction.
 
 Keep the original video linked rather than rehosting its content. Play it from the publisher's page if you choose to show it. Distinguish the talk's published claims from our proposed implementation on every architectural discussion.

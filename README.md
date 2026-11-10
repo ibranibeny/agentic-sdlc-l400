@@ -23,7 +23,7 @@ This is not Levi Strauss's internal source code, exact agent roster, a GitHub pr
 | Small retail availability API and container definition | `demo/`, `Dockerfile` |
 | Read-only PR review-plan workflow (no AI execution) | `.github/workflows/review-plan.yml` |
 | CI and GitHub Pages deployment | `.github/workflows/` |
-| Companion presentation with presenter notes | `presentations/agentic-sdlc-l400.pptx` |
+| 36-slide presentation with presenter notes, actual code and captured PNG/GIF visuals | `presentations/agentic-sdlc-l400.pptx` |
 | Live animation driven by the actual CLI policy engine | `site/workshop.*`, `lab/scenario.mjs` |
 | Real browser screenshots, animation frames and provenance | `site/screenshots/`, `browser-tests/` |
 
